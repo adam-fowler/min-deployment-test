@@ -2,12 +2,12 @@
   "object": {
     "pins": [
       {
-        "package": "INIParser",
-        "repositoryURL": "https://github.com/PerfectlySoft/Perfect-INIParser.git",
+        "package": "empty-package",
+        "repositoryURL": "https://github.com/adam-fowler/empty-package.git",
         "state": {
           "branch": null,
-          "revision": "0952aac9ca54324ff25191569fd9c48eec424772",
-          "version": "3.0.2"
+          "revision": "c985452cc769f8790ba9a65893b7143597308486",
+          "version": "4.0.0"
         }
       }
     ]

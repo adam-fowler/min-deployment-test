@@ -8,9 +8,9 @@ let package = Package(
         .library( name: "min-deployment-test", targets: ["min-deployment-test"])
     ],
     dependencies: [
-        .package(url: "https://github.com/PerfectlySoft/Perfect-INIParser.git", .upToNextMajor(from: "3.0.0")),
+        .package(url: "https://github.com/adam-fowler/empty-package.git", .upToNextMinor(from: "4.0.0")),
     ],
     targets: [
-        .target(name: "min-deployment-test", dependencies: ["INIParser"])
+        .target(name: "min-deployment-test", dependencies: ["empty-package"])
     ]
 )

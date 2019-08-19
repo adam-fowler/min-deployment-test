@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D160EFDE230A8AF400BE79E0 /* empty_package.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1A331CB230A8AA2005474F0 /* empty_package.framework */; };
+		D160EFDF230A8AF400BE79E0 /* empty_package.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1A331CB230A8AA2005474F0 /* empty_package.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D17B03802309A770006731EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17B037F2309A770006731EE /* AppDelegate.swift */; };
 		D17B03822309A770006731EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17B03812309A770006731EE /* ViewController.swift */; };
 		D17B03852309A770006731EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D17B03832309A770006731EE /* Main.storyboard */; };
@@ -14,17 +16,15 @@
 		D17B038A2309A770006731EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D17B03882309A770006731EE /* LaunchScreen.storyboard */; };
 		D17B039D2309A785006731EE /* min_deployment_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D17B039C2309A77E006731EE /* min_deployment_test.framework */; };
 		D17B039E2309A785006731EE /* min_deployment_test.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D17B039C2309A77E006731EE /* min_deployment_test.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D17B03A12309A785006731EE /* INIParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D17B039A2309A77E006731EE /* INIParser.framework */; };
-		D17B03A22309A785006731EE /* INIParser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D17B039A2309A77E006731EE /* INIParser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D17B03992309A77E006731EE /* PBXContainerItemProxy */ = {
+		D160EFE0230A8AF400BE79E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D17B03912309A77E006731EE /* min-deployment-test.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = "INIParser::INIParser::Product";
-			remoteInfo = INIParser;
+			proxyType = 1;
+			remoteGlobalIDString = "empty-package::empty-package";
+			remoteInfo = "empty-package";
 		};
 		D17B039B2309A77E006731EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -40,12 +40,12 @@
 			remoteGlobalIDString = "min-deployment-test::min-deployment-test";
 			remoteInfo = "min-deployment-test";
 		};
-		D17B03A32309A785006731EE /* PBXContainerItemProxy */ = {
+		D1A331CA230A8AA2005474F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D17B03912309A77E006731EE /* min-deployment-test.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = "INIParser::INIParser";
-			remoteInfo = INIParser;
+			proxyType = 2;
+			remoteGlobalIDString = "empty-package::empty-package::Product";
+			remoteInfo = "empty-package";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -56,8 +56,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D17B03A22309A785006731EE /* INIParser.framework in Embed Frameworks */,
 				D17B039E2309A785006731EE /* min_deployment_test.framework in Embed Frameworks */,
+				D160EFDF230A8AF400BE79E0 /* empty_package.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,8 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D17B03A12309A785006731EE /* INIParser.framework in Frameworks */,
 				D17B039D2309A785006731EE /* min_deployment_test.framework in Frameworks */,
+				D160EFDE230A8AF400BE79E0 /* empty_package.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +121,7 @@
 		D17B03922309A77E006731EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D17B039A2309A77E006731EE /* INIParser.framework */,
+				D1A331CB230A8AA2005474F0 /* empty_package.framework */,
 				D17B039C2309A77E006731EE /* min_deployment_test.framework */,
 			);
 			name = Products;
@@ -143,7 +143,7 @@
 			);
 			dependencies = (
 				D17B03A02309A785006731EE /* PBXTargetDependency */,
-				D17B03A42309A785006731EE /* PBXTargetDependency */,
+				D160EFE1230A8AF400BE79E0 /* PBXTargetDependency */,
 			);
 			name = "ios-app";
 			productName = "ios-app";
@@ -190,18 +190,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D17B039A2309A77E006731EE /* INIParser.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = INIParser.framework;
-			remoteRef = D17B03992309A77E006731EE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		D17B039C2309A77E006731EE /* min_deployment_test.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = min_deployment_test.framework;
 			remoteRef = D17B039B2309A77E006731EE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D1A331CB230A8AA2005474F0 /* empty_package.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = empty_package.framework;
+			remoteRef = D1A331CA230A8AA2005474F0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -232,15 +232,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D160EFE1230A8AF400BE79E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "empty-package";
+			targetProxy = D160EFE0230A8AF400BE79E0 /* PBXContainerItemProxy */;
+		};
 		D17B03A02309A785006731EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "min-deployment-test";
 			targetProxy = D17B039F2309A785006731EE /* PBXContainerItemProxy */;
-		};
-		D17B03A42309A785006731EE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = INIParser;
-			targetProxy = D17B03A32309A785006731EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

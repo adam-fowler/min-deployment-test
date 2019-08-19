@@ -1,4 +1,4 @@
-import INIParser
+import empty_package
 
 struct min_deployment_test {
     var text = "Hello, World!"
